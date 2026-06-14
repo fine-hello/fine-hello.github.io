@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页 — 实验报告</title>
+    <style>
+        body { font-family:"Microsoft YaHei",Arial,sans-serif; margin:0; background:#f7f7f7; color:#222; }
+        header { background: linear-gradient(90deg,#b00000,#e53935); color:#fff; padding:36px 18px; text-align:center; }
+        header h1 { margin:0; font-size:2rem; }
+        main { max-width:980px; margin:28px auto; padding:0 16px; }
+        section { background:#fff; border-radius:10px; padding:18px; box-shadow:0 6px 18px rgba(0,0,0,0.06); margin-bottom:18px; }
+        .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:12px; }
+        .card img { width:100%; height:240px; object-fit:cover; display:block; border-bottom:1px solid #eee; }
+        .card { border-radius:8px; overflow:hidden; background:#fff; border:1px solid #f0f0f0; }
+        .card .meta { padding:12px; }
+        .badge { display:inline-block; background:#fff0f0; color:#c00000; padding:4px 10px; border-radius:999px; font-size:0.9rem; }
+        footer { text-align:center; color:#777; padding:18px 8px; font-size:0.9rem; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>我的个人主页（实验报告）</h1>
+    <p>热爱祖国，积极向上——以网页展示路径引用与页面设计</p>
+</header>
+
+<main>
+    <section>
+        <h2>实验目的</h2>
+        <ul>
+            <li>了解 GitHub 与 GitHub Pages 的基本使用与托管原理。</li>
+            <li>掌握使用 HTML/CSS 进行基础页面排版与设计。</li>
+            <li>理解 Web 项目中相对路径与绝对路径的概念与应用场景。</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>图片展示（满足实验要求）</h2>
+        <p>下面展示两张图片：左图使用绝对路径引用，右图使用相对路径引用（相对路径基于本仓库根目录）。</p>
+
+        <div class="gallery">
+            <div class="card">
+                <!-- 绝对路径引用（示例：raw.githubusercontent.com） -->
+                <!-- 请将下列 URL 替换为你想使用的外部绝对 URL（例如图床或其他域名），或保持此示例（需公开仓库且分支名为 main） -->
+                <img src="https://raw.githubusercontent.com/fine-hello/fine-hello.github.io/main/data/img_1.png" alt="绝对路径图片：表达对祖国的热爱" />
+                <div class="meta">
+                    <span class="badge">绝对路径引用</span>
+                    <p>这张图片使用绝对 URL（示例为 raw.githubusercontent.com 的绝对链接），用来表达我对祖国的热爱与自豪。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- 相对路径引用（相对于仓库根目录，index.html 在根目录时可用） -->
+                <img src="imge/img.png" alt="相对路径图片：表达积极向上的精神" />
+                <div class="meta">
+                    <span class="badge">相对路径引用</span>
+                    <p>这张图片使用相对路径（<code>data/img.png</code>），来自仓库内的本地资源，表达积极向上、奋发进取的精神。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>实验总结（示例）</h2>
+        <p>
+            在本次实验中，我通过搭建 GitHub Pages 的个人主页，实践了 HTML 与 CSS 的页面布局，并验证了绝对路径与相对路径在 Web 项目中的不同用途。绝对路径便于引用外部网络资源或跨站点共享文件；相对路径更适合项目内部资源管理与发布。页面内容表达了我对祖国的热爱与积极进取的态度，可作为实验报告提交内容之一。
+        </p>
+    </section>
+</main>
+
+<footer>
+    © 2026 实验作业 — 个人主页 | 图片：绝对路径与相对路径示例
+</footer>
+</body>
+</html>
